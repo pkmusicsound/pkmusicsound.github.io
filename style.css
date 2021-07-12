@@ -1,0 +1,715 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*************************** MY CODE ***************************/
+
+*{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/************ INDEX.HTML ************ /
+
+/* HEADER CONTAINER STYLE */
+header{
+  width: 100%;
+  height: 100px;
+}
+header a .logo_image{
+  display: none;
+}
+
+header nav ul{
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+header nav ul li{
+  display: inline-block;
+  float: left;
+  list-style-type: none;
+}
+
+@font-face {
+  src: url("fonts/Ubuntu Font/Ubuntu-Regular.ttf");
+  font-family: 'Ubuntu', sans-serif;
+}
+header nav ul li a{
+  display: block;
+  font-size: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  color: black;
+  line-height: 50px;
+  margin: 25px 0px;
+  padding: 0px 10px;
+  text-transform: uppercase;
+}
+header nav ul li a:hover{
+  border-bottom: 2px solid black;
+}
+
+header .header-favorite-songs{
+  display: none;
+  transition: .5s;
+}
+
+@media only screen and (min-width: 1000px){
+  header a .logo_image{
+    display: block;
+    width: 150px;
+    height: 100px;
+    background-image: url("images/PK_LOGO.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+  }
+
+  header nav ul{
+    float: left;
+    margin-left: 35px;
+  }
+
+  header nav ul li{
+    display: inline-block;
+    float: left;
+    list-style-type: none;
+  }
+
+  header nav ul li a{
+    display: block;
+    font-size: 16px;
+  }
+
+  header nav ul li .first-a{
+    padding-left: 35px;
+    border-left: 2px solid black;
+  }
+
+  header .header-favorite-songs{
+    display: block;
+    float: right;
+    font-family: 'Ubuntu', sans-serif;
+    border: 1px solid black;
+    color: black;
+    padding: 15px 15px;
+    margin: 26px 15px;
+  }
+
+    header .header-favorite-songs:hover{
+      background-color: #146eff;
+      color: white;
+      border: 1px solid #146eff;
+      transition: .5s;
+    }
+}
+
+/* MAIN CONTAINER STYLE */
+
+/* FIRST SUB-CONTAINER AT MAIN */
+main .main-loader{
+  margin-top: 2px;
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #2c21ff,  #007bff);
+}
+
+main .main-loader .loader{
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+main .main-loader .loader .stroke{
+  display: block;
+  position: relative;
+  background: #f1f1f1;
+  height: 100%;
+  width: 10px;
+  border-radius: 50px;
+  margin: 0 5px;
+  animation: animate 1.2s linear infinite;
+}
+
+@keyframes animate{
+  50%{
+    height: 20%;
+  }
+  100%{
+    height: 100%;
+  }
+}
+
+main .main-loader .loader .stroke:nth-child(1){
+  animation-delay: 0s;
+}
+main .main-loader .loader .stroke:nth-child(2){
+  animation-delay: 0.3s;
+}
+main .main-loader .loader .stroke:nth-child(3){
+  animation-delay: 0.6s;
+}
+main .main-loader .loader .stroke:nth-child(4){
+  animation-delay: 0.9s;
+}
+main .main-loader .loader .stroke:nth-child(5){
+  animation-delay: 0.6s;
+}
+main .main-loader .loader .stroke:nth-child(6){
+  animation-delay: 0.3s;
+}
+main .main-loader .loader .stroke:nth-child(7){
+  animation-delay: 0s;
+}
+
+/* SECOND SUB-CONTAINER AT MAIN */
+main .wrapper{
+  width: 100%;
+  height: auto;
+}
+
+main .wrapper p.wrapper-first-p{
+  padding: 15px;
+  text-align: left;
+  font-family: 'Literata', serif;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+main .wrapper p.wrapper-first-p::first-letter{
+  font-size: 200%;
+}
+main .wrapper p.wrapper-second-p{
+  text-align: center;
+  font-family: 'Literata', serif;
+  line-height: 30px;
+  margin: 20px;
+}
+main .wrapper p.wrapper-second-p a{
+  color: black;
+  padding: 15px;
+}
+main .wrapper p.wrapper-second-p a:hover{
+  border: 2px solid black;
+}
+main .wrapper h3{
+    margin: 15px 0px 0px 15px;
+    font-family: 'Literata', serif;
+}
+
+@media only screen and (min-width: 1000px){
+  main .wrapper{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 20px;
+  }
+  main .wrapper h3{
+      margin-top: 0;
+  }
+}
+/************** SOCIAL MEDIA ICONS **************/
+a.fa {
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  width: fit-content;
+  height: auto;
+  transition: transform 0.5s;
+}
+.fa-linkedin {
+  background: #303030;
+  color: white;
+}
+.fa-youtube {
+  background: #303030;
+  color: white;
+}
+.fa:hover {
+    opacity: 0.7;
+    transform: translateY(-3px);
+}
+
+footer{
+  width: calc(100% - 80px);
+  height: 170px;
+  padding: 40px 40px;
+  background-color: #303030;
+}
+
+footer ul.footer-first-ul{
+  display: none;
+}
+
+footer ul.footer-second-ul{
+  width: fit-content;
+  display: block;
+  margin: 35px auto 0px auto;
+}
+footer ul.footer-second-ul li{
+  display: inline-block;
+}
+@font-face {
+    src: url("fonts/Nunito_Sans Font/NunitoSans-ExtraLight.ttf");
+    font-family: 'Nunito Sans', sans-serif;
+}
+footer p.footer-first-p{
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+  color: white;
+  border-top: 1px solid gray;
+  margin-top: 15px;
+  padding: 10px 50px;
+  font-weight: 100;
+  font-size: 13px;
+  font-family: 'Nunito Sans', sans-serif;
+  opacity: .5;
+}
+footer p.footer-second-p{
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+  font-size: 11px;
+  opacity: .5;
+}
+footer p.footer-second-p a{
+  color: orange;
+}
+footer p.footer-second-p a:hover{
+  border-bottom: 2px solid white;
+  color: white;
+}
+@media only screen and (min-width: 1000px){
+  footer ul.footer-first-ul{
+    display: block;
+    float: left;
+    width: fit-content;
+    margin-left: 150px;
+    margin-top: 35px;
+  }
+
+  footer ul.footer-first-ul li{
+    font-size: 20px;
+    line-height: 30px;
+    display: block;
+  }
+
+  footer ul.footer-first-ul li a{
+    color: white;
+  }
+
+  footer ul.footer-first-ul li a:hover{
+    color: gray;
+  }
+
+  footer ul.footer-second-ul{
+    float: right;
+    margin-top: 35px;
+    margin-right: 150px;
+  }
+  footer ul.footer-second-ul li{
+    display: block;
+  }
+  footer p.footer-first-p{
+    margin-top: 145px;
+  }
+}
+
+/************ ABOUT.HTML ************/
+
+main .about-wrapper .wrapper-img{
+  margin-top: 2px;
+  width: 100%;
+  height: 90vh;
+  background-image: url("images/piano.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: table;
+}
+
+main .about-wrapper .wrapper-img h2{
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  text-align: center;
+  font-family: 'Literata', serif;
+  font-size: 30px;
+  text-shadow: 8px 8px 4px black; /* DEKSIA KATW THOLOURA XRWMA */
+}
+
+main .about-wrapper .about-wrapper-subcategory .wrapper-face{
+  width: 250px;
+  height: 330px;
+  margin: 35px auto;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 0px 0px 35px black; /* DEKSIA KATW THOLOURA XRWMA */
+  background-image: url("images/face.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .about-wrapper .about-wrapper-subcategory .wrapper-paragraph{
+ width: 350px;
+ margin: 0 auto 10px auto;
+ padding-top: 20px;
+ border-top: 1px solid black;
+ line-height: 25px;
+ font-family: 'Literata', serif;
+ text-align: left;
+}
+main .about-wrapper .about-wrapper-subcategory .wrapper-paragraph::first-letter{
+  font-size: 200%;
+}
+
+main .about-wrapper .about-wrapper-subcategory .wrapper-paragraph a:hover{
+  color: red;
+}
+
+@media only screen and (min-width: 1000px){
+  main .about-wrapper .about-wrapper-subcategory{
+    width: 1000px;
+    margin: 0 auto;
+    height: auto;
+    font-size: 20px;
+  }
+
+  main .about-wrapper .wrapper-img h2{
+    font-size: 35px;
+  }
+
+  main .about-wrapper .about-wrapper-subcategory .wrapper-face{
+    width: 150px;
+    height: 200px;
+    margin: 30px 60px 10px 0px;
+    float: left;
+  }
+  main .about-wrapper .about-wrapper-subcategory .wrapper-paragraph{
+    width: 100%;
+    margin: 30px 10px 30px 0px;
+    padding-top: 20px;
+    border-top: none;
+    line-height: 30px;
+  }
+}
+
+/************ CONTACT.HTML ************/
+main .main-background{
+  background-color: #e6e6e6;
+  height: auto;
+  padding: 15px;
+  margin-top: 2px;
+}
+
+main .main-background .main-text-container{
+  margin: 170px auto;
+  width: 300px;
+  background-color: white;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0px 0px 35px black; /* DEKSIA KATW THOLOURA XRWMA */
+  border-radius: 5px;
+}
+
+main .main-background .main-text-container h1{
+  padding: 20px 0px 25px 0px;
+  font-size: 30px;
+  font-family: 'Literata', serif;
+}
+
+main .main-background .main-text-container p.text-p{
+  font-family: 'Literata', serif;
+  line-height: 20px;
+  padding: 0px 0px 30px 0px;
+  opacity: 0.7;
+}
+
+main .main-background .main-text-container ul.main-images-container{
+  text-align: center;
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+}
+@font-face {
+    src: url("fonts/Staatliches Font/Staatliches-Regular.ttf");
+    font-family: 'Staatliches', cursive;
+}
+main .main-background .main-text-container ul.main-images-container p.email-title-p{
+  font-family: 'Staatliches', cursive;
+  padding: 10px;
+  font-size: 25px;
+  opacity: 0.7;
+}
+
+main .main-background .main-text-container ul.main-images-container a{
+  color: black;
+}
+main .main-background .main-text-container ul.main-images-container a:hover{
+  color: red;
+}
+
+@media only screen and (min-width: 1000px){
+  main .main-background .main-text-container{
+    width: 500px;
+  }
+}
+
+/************ MY-MUSICS.HTML ************/
+
+main .my_musics-img-container{
+  margin-top: 2px;
+  width: 100%;
+  height: 90vh;
+  background-image: url("images/phone_image_musics.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: table;
+}
+
+main .my_musics-img-container h2{
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  font-family: 'Literata', serif;
+  font-size: 30px;
+  text-shadow: 8px 8px 8px black;
+}
+
+main .music-categories{
+  display: block;
+  width: fit-content;
+  margin: 0px auto 10px auto;
+  font-family: 'Literata', serif;
+
+}
+
+main p.p-categories{
+  text-align: center;
+  padding: 30px 0px 30px 0px;
+  font-family: 'Literata', serif;
+  font-size: 30px;
+}
+
+main .music-categories li{
+  text-align: center;
+  display: block;
+}
+main .music-categories li a{
+  display: block;
+  padding: 15px;
+  color: black;
+}
+
+main .music-categories li a:hover{
+  border: 1px solid black;
+}
+@media only screen and (min-width: 1000px){
+  main .my_musics-img-container{
+    background-image: url("images/desktop_image_musics.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  main .music-categories-container{
+    width: 1000px;
+    margin: 0 auto;
+    display: block;
+    height: fit-content;
+  }
+  main .music-categories li{
+    display: inline-block;
+  }
+  main .music-categories li a{
+    display: block;
+    padding: 15px;
+    color: black;
+    margin: 0 5px;
+    border: 2px solid #434343;
+    transition: .5s;
+  }
+  main .music-categories li a:hover{
+    border: none;
+    background-color: #424242;
+    color: white;
+    border: 2px solid #2F2F2F;
+  }
+}
+/************ [all categories music].HTML ************/
+
+main .music-videos-title-wrapper{
+  width: fit-content;
+  display: block;
+  margin: 0 auto 40px;
+}
+main .music-videos-title-wrapper h1{
+  font-size: 25px;
+  font-family: 'Bai Jamjuree', sans-serif;
+  opacity: 0.7;
+  width: 150px;
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: 2px solid black;
+}
+main .central-position{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+main .central-position .music-title{
+  text-align: center;
+  font-family: 'Literata', serif;
+  line-height: 20px;
+  flex-basis: 90%;
+  margin-bottom: 5px;
+}
+main .central-position .music-title .music-video-container iframe{
+  width: 100%;
+  height: 200px;
+  box-shadow: 8px 8px 18px black;
+  margin-bottom: 10px;
+}
+
+.header-title{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 762px){
+  main .central-position{
+    margin: 0 auto;
+    width: 762px;
+  }
+  main .central-position .music-title .music-video-container iframe{
+    width: 100%;
+    height: 168px;
+  }
+  main .central-position .music-title{
+    flex-basis: 300px;
+    padding: 0px 25px 0px 25px;
+  }
+}
+@media only screen and (min-width: 1000px){
+  main .central-position{
+    width: 1000px;
+  }
+  main .central-position .music-title .music-video-container iframe{
+    width: 100%;
+    height: 224px;
+  }
+  main .central-position .music-title{
+    flex-basis: 400px;
+    padding: 0px 25px 0px 25px;
+  }
+}
