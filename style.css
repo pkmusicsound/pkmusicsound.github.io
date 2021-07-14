@@ -114,11 +114,15 @@ input, select {
 header{
   width: 100%;
   height: 100px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
 }
 header a .logo_image{
   display: none;
 }
-
 header nav ul{
   display: block;
   margin: 0 auto;
@@ -209,12 +213,14 @@ header .header-favorite-songs{
 /* MAIN CONTAINER STYLE */
 
 /* FIRST SUB-CONTAINER AT MAIN */
+main{
+  margin-top: 102px;
+}
 main .main-loader{
-  margin-top: 2px;
   min-height: 90vh;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items:center;
   justify-content: center;
   background: linear-gradient(45deg, #2c21ff,  #007bff);
 }
