@@ -468,6 +468,7 @@ main .about-wrapper .about-wrapper-subcategory .wrapper-face{
   width: 250px;
   height: 330px;
   margin: 35px auto;
+  /*
   border: 2px solid black;
   border-radius: 20px;
   box-shadow: 0px 0px 35px black; /* DEKSIA KATW THOLOURA XRWMA */
@@ -508,7 +509,7 @@ main .about-wrapper .about-wrapper-subcategory .wrapper-paragraph a:hover{
   main .about-wrapper .about-wrapper-subcategory .wrapper-face{
     width: 150px;
     height: 200px;
-    margin: 30px 60px 10px 0px;
+    margin: 30px 30px;
     float: left;
   }
   main .about-wrapper .about-wrapper-subcategory .wrapper-paragraph{
@@ -517,6 +518,7 @@ main .about-wrapper .about-wrapper-subcategory .wrapper-paragraph a:hover{
     padding-top: 20px;
     border-top: none;
     line-height: 30px;
+    text-align: justify;
   }
 }
 
