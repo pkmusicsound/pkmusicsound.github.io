@@ -468,10 +468,9 @@ main .about-wrapper .about-wrapper-subcategory .wrapper-face{
   width: 250px;
   height: 330px;
   margin: 35px auto;
-  /*
-  border: 2px solid black;
+  /*border: 2px solid black;
   border-radius: 20px;
-  box-shadow: 0px 0px 35px black; /* DEKSIA KATW THOLOURA XRWMA */
+  box-shadow: 0px 0px 35px black;  DEKSIA KATW THOLOURA XRWMA */
   background-image: url("images/face.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -479,12 +478,13 @@ main .about-wrapper .about-wrapper-subcategory .wrapper-face{
 }
 main .about-wrapper .about-wrapper-subcategory .wrapper-paragraph{
  width: 350px;
- margin: 0 auto 10px auto;
+ margin: 0 auto 20px auto;
  padding-top: 20px;
  border-top: 1px solid black;
  line-height: 25px;
  font-family: 'Literata', serif;
- text-align: left;
+ text-align: justify;
+ font-size: 17px;
 }
 main .about-wrapper .about-wrapper-subcategory .wrapper-paragraph::first-letter{
   font-size: 200%;
@@ -509,7 +509,7 @@ main .about-wrapper .about-wrapper-subcategory .wrapper-paragraph a:hover{
   main .about-wrapper .about-wrapper-subcategory .wrapper-face{
     width: 150px;
     height: 200px;
-    margin: 30px 30px;
+    margin: 30px 35px 10px 15px;
     float: left;
   }
   main .about-wrapper .about-wrapper-subcategory .wrapper-paragraph{
@@ -518,7 +518,6 @@ main .about-wrapper .about-wrapper-subcategory .wrapper-paragraph a:hover{
     padding-top: 20px;
     border-top: none;
     line-height: 30px;
-    text-align: justify;
   }
 }
 
