@@ -1,60 +1,101 @@
 <!DOCTYPE html>
-<html lang="el">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a website containing music tracks by composer and musician producer PK.">
-    <meta name="keywords" content="Music, jazz, hip-hop, country, pop, ballad, greece, producer, composer, greece, PK">
-    <meta name="author" content="PK">
-    <title>PK | Σχετικά με εμένα</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/png" href="images/PK_LOGO.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- FONT FAMILY FOR MAIN - P -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Literata&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <a href="index.html">
-        <div class="logo_image" title="PK"></div>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="first-a">Αρχικη Σελιδα</a></li>
-          <li><a href="about.html">Σχετικα με εμενα</a></li>
-          <li><a href="contact.html">Επικοινωνια</a></li>
-        </ul>
-      </nav>
-      <a href="my-musics.html" class="header-favorite-songs">ΔΗΜΟΦΙΛΗ ΚΟΜΜΑΤΙΑ</a>
-    </header>
-    <main>
-      <div class="about-wrapper">
-        <section class="wrapper-img">
-          <h2>Σχετικά με εμένα...</h2>
-        </section>
-        <div class="about-wrapper-subcategory">
-          <section class="wrapper-face">
-          </section>
-          <!-- <hr /> -->
-          <p class="wrapper-paragraph">
-            Ονομάζομαι Παναγιώτης Κάργος, κατάγομαι από την Αλεξανδρούπολη και είμαι προπτυχιακός φοιτητής του Τμήματος Πληροφορικής του Πανεπιστημίου Δυτικής Μακεδονίας (Πρώην Τεχνολογικό Εκπαιδευτικό Ίδρυμα Δυτικής Μακεδονίας). Λόγω παύσης σπουδών στην σχολή λόγω υποχρεώσεων φοίτησα στο ΙΕΚ Αλεξανδρούπολης με ειδικότητα Τεχνικός Εφαρμογών Πληροφορικής όπου μου έχει απομείνει μόνο η πρακτική άσκηση. Η κύριά μου ενασχόληση είναι η κατασκευή - σύνθεση μουσικής χρησιμοποιώ το πρόγραμμα Audacity και FL Studio για τις ανάγκες μου και σκέφτομαι μακροπρόθεσμα να κινηθώ επαγγελματικά στον συγκεκριμένο χώρο. Κατέχω πιστοποίηση πολυμέσων για την επεξεργασία βίντεο, ήχου, εικόνας όπως επίσης και για μαθήματα αρμονίου. Επίσης, έχω συμμετάσχει σε διάφορες κοινωνικές εκδηλώσεις μουσικής κατά την διάρκεια των μαθημάτων μουσικής αρμονίου. Μου αρέσει, συγκεκριμένα, η <b>Jazz μουσική, η κλασσική, η βυζαντινή, κάποια techno, Hip hop, Εθνική μουσική, και η παραδοσιακή</b>. Επίσης, ασχολούμαι ενεργά με την ψαλτική τέχνη.
-          </p>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pi Kappa Music</title>
+        <link rel="icon" href="images/image-banner.jpg" type="image/jpg" sizes="12x12">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Website Script -->
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <!-- Header Container -->
+        <header>
+            <!-- Brand Name -->
+            <a href="index.html" class="brand-name" title="Pi Kappa Music">Pi Kappa <span>Music</span></a>
+            <!-- Dropdown button-->
+            <div class="button-nav-menu" onclick="active()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <!-- Navigation Menu-->
+            <nav class="navBar">
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fa fa-user"></i> About me</a></li>
+                    <li><a href="mymusics.html"><i class="fa fa-music"></i> My music</a></li>
+                    <li><a href="contact.html"><i class="fa fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Main Container -->
+        <main>
+            <div class="about-container">
+                <!-- First Image Section -->
+                <div class="image-section">
+                    <h1>About me!</h1>
+                </div>
+                <!-- Info about section-->
+                <div class="about-info">
+                    <h2>Who is me?</h2>
+                    <p>
+                        My name is Panagiotis Kargos, I come from Alexandroupoli and I am a final year student at the public IEK of Alexandroupoli with a specialization 
+                        in IT Application Technician. My main occupation is in the field of multimedia, but mostly the construction - composition of music. I use the 
+                        program Audacity and FL Studio for my needs and I am thinking of moving professionally in this area in the long term. I hold a multimedia 
+                        certification in video, audio, image editing as well as harmonioum lessons. Also, I have participated in various social music events during the 
+                        harmonium lessons. I like, specifically, Jazz music, classical, byzantine, some techno, Hip hop, national music, and traditional. I am also 
+                        actively involved in the art of chanting.
+                    </p>
+                </div>
+                <!-- My Services -->
+                <div class="application-services">
+                    <h2>My Softwares</h2>
+                    <!-- First Image-->
+                    <div class="image-container">
+                        <img src="images/flstudio.png" alt="FL Studio Image">
+                        <p>FL Studio</p>
+                    </div>
+                    <!-- Second Image-->
+                    <div class="image-container">
+                        <img src="images/audacity.png" alt="Audacity Image">
+                        <p>Audacity</p>
+                    </div>
+                    <!-- Third Image-->
+                    <div class="image-container">
+                        <img src="images/premierepro.png" alt="Premiere Pro Image">
+                        <p>Premiere Pro</p>
+                    </div>
+                </div>
+                <!-- Provide to contact section -->
+                <div class="contact-section">
+                    <p>Looking to start a project?</p>
+                    <a href="contact.html">Contact me</a>
+                </div>
+            </div>
+        </main>
         </div>
-      </div>
-    </main>
-    <footer>
-      <ul class="footer-first-ul">
-        <li><a href="index.html">Αρχική Σελίδα</a></li>
-        <li><a href="about.html">Σχετικά με εμένα</a></li>
-        <li><a href="contact.html">Επικοινωνία</a></li>
-      </ul>
-      <ul class="footer-second-ul">
-        <li><a href="#" class="fa fa-linkedin"></a></li>
-        <li><a href="https://www.youtube.com/channel/UCkD6a-qqyJD81_Yh811UCYg" target="_blank" class="fa fa-youtube"></a></li>
-      </ul>
-      <p class="footer-first-p">Copyright &copy; 2021 PK</p>
-      <p class="footer-second-p">DEVELOPED BY <a href="https://github.com/RaphaelKarg/PK-Website" target="_blank">RaphaelKarg</a></p>
-    </footer>
-  </body>
+        <!-- Footer Container -->
+        <footer>
+            <div class="info-container">
+                <!-- List of Links -->
+                <ul>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCkD6a-qqyJD81_Yh811UCYg" target="_blank" class="fa fa-youtube-play"></a>
+                    </li>
+                    <li>
+                        <a href="https://soundcloud.com/cube-c-167001580" target="_blank" class="fa fa-soundcloud"></a>
+                    </li>
+                </ul>
+                <!-- Footer Info -->
+                <p>
+                    Copyright &copy; 2023 PK <br>
+                    DEVELOPED BY <a href="https://www.linkedin.com/in/raphael-kargos-64a4791ba" target="_blank">RaphaelKarg</a>
+                </p>
+            </div>
+        </footer>
+    </body>
 </html>
