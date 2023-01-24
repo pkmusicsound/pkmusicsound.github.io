@@ -891,6 +891,7 @@ main .music-album-container {
 */
 .image h2 {
     font-size: 23px;
+    text-align: center;
 }
 .image p {
     font-size: 18px;
